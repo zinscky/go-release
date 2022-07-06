@@ -2,8 +2,7 @@
     "branches": [
         "main"
     ],
-    "prepare": [
-        {
+    "prepare": [{
             "path": "@semantic-release/changelog",
             "changelogFile": "docs/CHANGELOG.md"
         },
@@ -13,11 +12,20 @@
                 "docs/CHANGELOG.md"
             ],
             "message": "chore(release): ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}"
+        },
+        {
+            "path": "@semantic-release/github",
+            "assets": [{
+                    "path": "docs/CHANGELOG.md",
+                    "label": "Changelog"
+                }
+            ]
         }
     ],
     "plugins": [
         "@semantic-release/commit-analyzer",
         "@semantic-release/release-notes-generator",
-        "@semantic-release/git"
+        "@semantic-release/git",
+        "@semantic-release/github"
     ]
 }
