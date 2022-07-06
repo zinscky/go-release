@@ -1,3 +1,11 @@
+## [1.0.1](https://github.com/zinscky/go-release/compare/v1.0.0...v1.0.1) (2022-07-06)
+
+
+### Bug Fixes
+
+* add semantic-release github ([602baa9](https://github.com/zinscky/go-release/commit/602baa9bfca56db8359aeb7a52479f409ce1f206))
+* remove github from prepare stage ([5bf1936](https://github.com/zinscky/go-release/commit/5bf1936eb34307ef184dfdd5d1d0d727a8456639))
+
 # 1.0.0 (2022-07-06)
 
 
